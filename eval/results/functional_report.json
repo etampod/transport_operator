@@ -1,0 +1,723 @@
+{
+  "agent": {
+    "n": 20,
+    "passed": 20,
+    "pass_rate": 1.0,
+    "intent_accuracy": 1.0,
+    "keyword_accuracy": 1.0,
+    "citation_accuracy": 1.0,
+    "mean_latency_ms": 11.788
+  },
+  "retrieval_only": {
+    "n": 20,
+    "passed": 12,
+    "pass_rate": 0.6,
+    "intent_accuracy": 1.0,
+    "keyword_accuracy": 0.6,
+    "citation_accuracy": 0.85,
+    "mean_latency_ms": 4.495
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "question": "How long is a single ticket valid?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "A single ticket is valid for 90 minutes from the time of purchase.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-TICKET — Single ticket validity"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 60.863,
+      "ok": true
+    },
+    {
+      "id": "q02",
+      "question": "What does an adult single ticket cost in zone 1?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "An adult single ticket costs 2.40 EUR in zone 1.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-FARE — Adult single tickets"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 6.69,
+      "ok": true
+    },
+    {
+      "id": "q03",
+      "question": "How long is lost property kept?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "Lost property is kept for 30 days.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-LOST — Holding period"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 9.16,
+      "ok": true
+    },
+    {
+      "id": "q04",
+      "question": "What is the penalty fare for travelling without a valid ticket?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "A passenger without a valid ticket must pay a penalty fare of 60 EUR.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-TICKET — Penalty fare"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 11.732,
+      "ok": true
+    },
+    {
+      "id": "q05",
+      "question": "How quickly must passenger assistance be booked before departure?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "Passenger assistance must be booked at least 2 hours before departure.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-ACCESS — Booking passenger assistance"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 10.07,
+      "ok": true
+    },
+    {
+      "id": "q06",
+      "question": "Within how many days can an unused single ticket be refunded?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "An unused single ticket can be refunded within 14 days of purchase.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-REFUND — Unused single tickets"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 7.26,
+      "ok": true
+    },
+    {
+      "id": "q07",
+      "question": "What is the administration fee kept on a season ticket refund?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "Podoba Transit keeps an administration fee of 5 EUR on a season ticket refund.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-REFUND — Season ticket refunds"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 11.426,
+      "ok": true
+    },
+    {
+      "id": "q08",
+      "question": "How fast is the first response to a complaint?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "Podoba Transit sends a first response to a complaint within 5 working days.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-COMPLAINT — First response"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 14.745,
+      "ok": true
+    },
+    {
+      "id": "q09",
+      "question": "When is the final response to a complaint sent?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "A final response to a complaint is sent within 20 working days.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-COMPLAINT — Final response"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 12.597,
+      "ok": true
+    },
+    {
+      "id": "q10",
+      "question": "Are bicycles allowed on trains arriving in the city centre between 07:30 and 09:30?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "Bicycles are not allowed on trains arriving in the city centre between 07:30 and 09:30.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-SAFE — Bicycles"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 15.634,
+      "ok": true
+    },
+    {
+      "id": "q11",
+      "question": "What does PRM stand for?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "PRM means passenger with reduced mobility.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-GLO — PRM"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 13.979,
+      "ok": true
+    },
+    {
+      "id": "q12",
+      "question": "For how many minutes does a single ticket stay valid after purchase?",
+      "expected_intent": "policy_lookup",
+      "intent": "policy_lookup",
+      "intent_ok": true,
+      "answer": "A single ticket is valid for 90 minutes from the time of purchase.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-TICKET — Single ticket validity"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 8.2,
+      "ok": true
+    },
+    {
+      "id": "q13",
+      "question": "How long is a single ticket valid, and how long is lost property kept?",
+      "expected_intent": "multi_part",
+      "intent": "multi_part",
+      "intent_ok": true,
+      "answer": "Part 1: A single ticket is valid for 90 minutes from the time of purchase.\n\nPart 2: Lost property is kept for 30 days.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-TICKET — Single ticket validity",
+        "POL-LOST — Holding period"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 10.288,
+      "ok": true
+    },
+    {
+      "id": "q14",
+      "question": "How much is an adult single ticket for 2 zones, and how long is lost property kept?",
+      "expected_intent": "multi_part",
+      "intent": "multi_part",
+      "intent_ok": true,
+      "answer": "Part 1: An adult single ticket for 2 zones costs 3.60 EUR. An adult single ticket costs 2.40 EUR in zone 1. Each additional zone adds 1.20 EUR.\n\nPart 2: Lost property is kept for 30 days.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-FARE — Adult single tickets",
+        "POL-LOST — Holding period"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 9.461,
+      "ok": true
+    },
+    {
+      "id": "q15",
+      "question": "How much is an adult single ticket for 3 zones?",
+      "expected_intent": "fare_calc",
+      "intent": "fare_calc",
+      "intent_ok": true,
+      "answer": "An adult single ticket for 3 zones costs 4.80 EUR. An adult single ticket costs 2.40 EUR in zone 1. Each additional zone adds 1.20 EUR.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-FARE — Adult single tickets"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 6.074,
+      "ok": true
+    },
+    {
+      "id": "q16",
+      "question": "How much is a child single ticket for 4 zones?",
+      "expected_intent": "fare_calc",
+      "intent": "fare_calc",
+      "intent_ok": true,
+      "answer": "A child single ticket for 4 zones costs 3.00 EUR. A child single ticket is half the adult single fare for the same number of zones. The adult single fare for 4 zones is 6.00 EUR.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-FARE — Adult single tickets",
+        "POL-FARE — Child fares"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 6.655,
+      "ok": true
+    },
+    {
+      "id": "q17",
+      "question": "The train was 45 minutes late and the ticket cost 8.00 EUR. How much compensation do I get?",
+      "expected_intent": "delay_compensation",
+      "intent": "delay_compensation",
+      "intent_ok": true,
+      "answer": "The compensation is 4.00 EUR. A delay of 30 to 59 minutes qualifies for compensation of 50 percent of the single ticket price. The ticket price used is 8.00 EUR and the delay used is 45 minutes.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-DELAY — Compensation thresholds"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 7.546,
+      "ok": true
+    },
+    {
+      "id": "q18",
+      "question": "The train was 12 minutes late and the ticket cost 6.40 EUR. How much compensation do I get?",
+      "expected_intent": "delay_compensation",
+      "intent": "delay_compensation",
+      "intent_ok": true,
+      "answer": "The delay does not qualify for compensation. A delay under 30 minutes does not qualify for compensation. The compensation amount is 0.00 EUR. The ticket price used is 6.40 EUR and the delay used is 12 minutes.\n\nThis assistant summarizes Podoba Transit customer rules for information only. It does not create a refund, a compensation decision, or a penalty notice. Station staff confirm claims and exceptions.",
+      "citations": [
+        "POL-DELAY — Compensation thresholds"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 5.927,
+      "ok": true
+    },
+    {
+      "id": "q19",
+      "question": "Hello, who are you?",
+      "expected_intent": "chitchat",
+      "intent": "chitchat",
+      "intent_ok": true,
+      "answer": "I am the Podoba Transit customer service assistant. I answer questions about fares, tickets, refunds, delay compensation, accessibility, complaints, lost property, and onboard safety, and I cite the rule I use.",
+      "citations": [],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 4.282,
+      "ok": true
+    },
+    {
+      "id": "q20",
+      "question": "What will the weather be in Budapest tomorrow?",
+      "expected_intent": "out_of_scope",
+      "intent": "out_of_scope",
+      "intent_ok": true,
+      "answer": "That question is outside Podoba Transit customer service. I can help with fares, tickets, refunds, delay compensation, accessibility, complaints, lost property, and onboard safety.",
+      "citations": [],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 3.165,
+      "ok": true
+    }
+  ],
+  "retrieval_rows": [
+    {
+      "id": "q01",
+      "question": "How long is a single ticket valid?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "A single ticket is valid for 90 minutes from the time of purchase.",
+      "citations": [
+        "POL-TICKET — Single ticket validity"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 3.052,
+      "ok": true
+    },
+    {
+      "id": "q02",
+      "question": "What does an adult single ticket cost in zone 1?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "An adult single ticket costs 2.40 EUR in zone 1.",
+      "citations": [
+        "POL-FARE — Adult single tickets"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 7.449,
+      "ok": true
+    },
+    {
+      "id": "q03",
+      "question": "How long is lost property kept?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "Lost property is kept for 30 days.",
+      "citations": [
+        "POL-LOST — Holding period"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 10.23,
+      "ok": true
+    },
+    {
+      "id": "q04",
+      "question": "What is the penalty fare for travelling without a valid ticket?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "A passenger without a valid ticket must pay a penalty fare of 60 EUR.",
+      "citations": [
+        "POL-TICKET — Penalty fare"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 5.477,
+      "ok": true
+    },
+    {
+      "id": "q05",
+      "question": "How quickly must passenger assistance be booked before departure?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "Passenger assistance must be booked at least 2 hours before departure.",
+      "citations": [
+        "POL-ACCESS — Booking passenger assistance"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 3.483,
+      "ok": true
+    },
+    {
+      "id": "q06",
+      "question": "Within how many days can an unused single ticket be refunded?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "An unused single ticket can be refunded within 14 days of purchase.",
+      "citations": [
+        "POL-REFUND — Unused single tickets"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 3.795,
+      "ok": true
+    },
+    {
+      "id": "q07",
+      "question": "What is the administration fee kept on a season ticket refund?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "Podoba Transit keeps an administration fee of 5 EUR on a season ticket refund.",
+      "citations": [
+        "POL-REFUND — Season ticket refunds"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 3.169,
+      "ok": true
+    },
+    {
+      "id": "q08",
+      "question": "How fast is the first response to a complaint?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "Podoba Transit sends a first response to a complaint within 5 working days.",
+      "citations": [
+        "POL-COMPLAINT — First response"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 8.16,
+      "ok": true
+    },
+    {
+      "id": "q09",
+      "question": "When is the final response to a complaint sent?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "A final response to a complaint is sent within 20 working days.",
+      "citations": [
+        "POL-COMPLAINT — Final response"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 5.174,
+      "ok": true
+    },
+    {
+      "id": "q10",
+      "question": "Are bicycles allowed on trains arriving in the city centre between 07:30 and 09:30?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "Bicycles are not allowed on trains arriving in the city centre between 07:30 and 09:30.",
+      "citations": [
+        "POL-SAFE — Bicycles"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 3.387,
+      "ok": true
+    },
+    {
+      "id": "q11",
+      "question": "What does PRM stand for?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "PRM means passenger with reduced mobility.",
+      "citations": [
+        "POL-GLO — PRM"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 4.197,
+      "ok": true
+    },
+    {
+      "id": "q12",
+      "question": "For how many minutes does a single ticket stay valid after purchase?",
+      "expected_intent": "policy_lookup",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "A single ticket is valid for 90 minutes from the time of purchase.",
+      "citations": [
+        "POL-TICKET — Single ticket validity"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 2.704,
+      "ok": true
+    },
+    {
+      "id": "q13",
+      "question": "How long is a single ticket valid, and how long is lost property kept?",
+      "expected_intent": "multi_part",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "Lost property is kept for 30 days.",
+      "citations": [
+        "POL-LOST — Holding period"
+      ],
+      "missing": [
+        "90 minutes"
+      ],
+      "forbidden": [],
+      "missing_docs": [
+        "POL-TICKET"
+      ],
+      "unexpected_citations": false,
+      "latency_ms": 2.683,
+      "ok": false
+    },
+    {
+      "id": "q14",
+      "question": "How much is an adult single ticket for 2 zones, and how long is lost property kept?",
+      "expected_intent": "multi_part",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "An adult single ticket costs 2.40 EUR in zone 1.",
+      "citations": [
+        "POL-FARE — Adult single tickets"
+      ],
+      "missing": [
+        "3.60 EUR",
+        "30 days"
+      ],
+      "forbidden": [],
+      "missing_docs": [
+        "POL-LOST"
+      ],
+      "unexpected_citations": false,
+      "latency_ms": 3.345,
+      "ok": false
+    },
+    {
+      "id": "q15",
+      "question": "How much is an adult single ticket for 3 zones?",
+      "expected_intent": "fare_calc",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "An adult single ticket costs 2.40 EUR in zone 1.",
+      "citations": [
+        "POL-FARE — Adult single tickets"
+      ],
+      "missing": [
+        "4.80 EUR"
+      ],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 2.879,
+      "ok": false
+    },
+    {
+      "id": "q16",
+      "question": "How much is a child single ticket for 4 zones?",
+      "expected_intent": "fare_calc",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "A child single ticket is half the adult single fare for the same number of zones.",
+      "citations": [
+        "POL-FARE — Child fares"
+      ],
+      "missing": [
+        "3.00 EUR"
+      ],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 3.783,
+      "ok": false
+    },
+    {
+      "id": "q17",
+      "question": "The train was 45 minutes late and the ticket cost 8.00 EUR. How much compensation do I get?",
+      "expected_intent": "delay_compensation",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "A delay of 30 to 59 minutes qualifies for compensation of 50 percent of the single ticket price.",
+      "citations": [
+        "POL-DELAY — Compensation thresholds"
+      ],
+      "missing": [
+        "4.00 EUR"
+      ],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 2.835,
+      "ok": false
+    },
+    {
+      "id": "q18",
+      "question": "The train was 12 minutes late and the ticket cost 6.40 EUR. How much compensation do I get?",
+      "expected_intent": "delay_compensation",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "An adult single ticket costs 2.40 EUR in zone 1.",
+      "citations": [
+        "POL-FARE — Adult single tickets"
+      ],
+      "missing": [
+        "does not qualify",
+        "0.00 EUR"
+      ],
+      "forbidden": [],
+      "missing_docs": [
+        "POL-DELAY"
+      ],
+      "unexpected_citations": false,
+      "latency_ms": 4.79,
+      "ok": false
+    },
+    {
+      "id": "q19",
+      "question": "Hello, who are you?",
+      "expected_intent": "chitchat",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "I could not find a Podoba Transit rule that answers this question.",
+      "citations": [],
+      "missing": [
+        "customer service assistant"
+      ],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 5.093,
+      "ok": false
+    },
+    {
+      "id": "q20",
+      "question": "What will the weather be in Budapest tomorrow?",
+      "expected_intent": "out_of_scope",
+      "intent": "retrieval_only",
+      "intent_ok": true,
+      "answer": "I could not find a Podoba Transit rule that answers this question.",
+      "citations": [],
+      "missing": [
+        "outside Podoba Transit"
+      ],
+      "forbidden": [],
+      "missing_docs": [],
+      "unexpected_citations": false,
+      "latency_ms": 4.212,
+      "ok": false
+    }
+  ]
+}

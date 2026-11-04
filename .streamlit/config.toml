@@ -1,0 +1,13 @@
+[server]
+address = "0.0.0.0"
+port = 8501
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+fileWatcherType = "none"
+# Empty would also allow every Host. "*" keeps a LAN hostname working when a
+# later Streamlit release defaults this list to localhost.
+allowedHosts = ["*"]
+
+[browser]
+gatherUsageStats = false

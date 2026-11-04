@@ -1,0 +1,162 @@
+[
+  {
+    "id": "q01",
+    "question": "How long is a single ticket valid?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["90 minutes"],
+    "forbid": ["30 days"],
+    "expect_docs": ["POL-TICKET"]
+  },
+  {
+    "id": "q02",
+    "question": "What does an adult single ticket cost in zone 1?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["2.40 EUR"],
+    "forbid": ["4.80", "half the adult"],
+    "expect_docs": ["POL-FARE"]
+  },
+  {
+    "id": "q03",
+    "question": "How long is lost property kept?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["30 days"],
+    "forbid": ["14 days"],
+    "expect_docs": ["POL-LOST"]
+  },
+  {
+    "id": "q04",
+    "question": "What is the penalty fare for travelling without a valid ticket?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["60 EUR"],
+    "forbid": ["2.40 EUR"],
+    "expect_docs": ["POL-TICKET"]
+  },
+  {
+    "id": "q05",
+    "question": "How quickly must passenger assistance be booked before departure?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["2 hours"],
+    "forbid": ["30 days"],
+    "expect_docs": ["POL-ACCESS"]
+  },
+  {
+    "id": "q06",
+    "question": "Within how many days can an unused single ticket be refunded?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["14 days"],
+    "forbid": ["30 days"],
+    "expect_docs": ["POL-REFUND"]
+  },
+  {
+    "id": "q07",
+    "question": "What is the administration fee kept on a season ticket refund?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["5 EUR"],
+    "forbid": ["whole months"],
+    "expect_docs": ["POL-REFUND"]
+  },
+  {
+    "id": "q08",
+    "question": "How fast is the first response to a complaint?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["5 working days"],
+    "forbid": ["20 working days"],
+    "expect_docs": ["POL-COMPLAINT"]
+  },
+  {
+    "id": "q09",
+    "question": "When is the final response to a complaint sent?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["20 working days"],
+    "forbid": ["5 working days"],
+    "expect_docs": ["POL-COMPLAINT"]
+  },
+  {
+    "id": "q10",
+    "question": "Are bicycles allowed on trains arriving in the city centre between 07:30 and 09:30?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["not allowed", "07:30"],
+    "forbid": ["off-peak"],
+    "expect_docs": ["POL-SAFE"]
+  },
+  {
+    "id": "q11",
+    "question": "What does PRM stand for?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["passenger with reduced mobility"],
+    "forbid": ["90 minutes"],
+    "expect_docs": ["POL-GLO"]
+  },
+  {
+    "id": "q12",
+    "question": "For how many minutes does a single ticket stay valid after purchase?",
+    "expected_intent": "policy_lookup",
+    "must_include": ["90 minutes"],
+    "forbid": ["50 percent"],
+    "expect_docs": ["POL-TICKET"]
+  },
+  {
+    "id": "q13",
+    "question": "How long is a single ticket valid, and how long is lost property kept?",
+    "expected_intent": "multi_part",
+    "must_include": ["90 minutes", "30 days"],
+    "forbid": [],
+    "expect_docs": ["POL-TICKET", "POL-LOST"]
+  },
+  {
+    "id": "q14",
+    "question": "How much is an adult single ticket for 2 zones, and how long is lost property kept?",
+    "expected_intent": "multi_part",
+    "must_include": ["3.60 EUR", "30 days"],
+    "forbid": [],
+    "expect_docs": ["POL-FARE", "POL-LOST"]
+  },
+  {
+    "id": "q15",
+    "question": "How much is an adult single ticket for 3 zones?",
+    "expected_intent": "fare_calc",
+    "must_include": ["4.80 EUR"],
+    "forbid": ["3.60 EUR"],
+    "expect_docs": ["POL-FARE"]
+  },
+  {
+    "id": "q16",
+    "question": "How much is a child single ticket for 4 zones?",
+    "expected_intent": "fare_calc",
+    "must_include": ["3.00 EUR", "half the adult"],
+    "forbid": ["4.80 EUR"],
+    "expect_docs": ["POL-FARE"]
+  },
+  {
+    "id": "q17",
+    "question": "The train was 45 minutes late and the ticket cost 8.00 EUR. How much compensation do I get?",
+    "expected_intent": "delay_compensation",
+    "must_include": ["4.00 EUR", "50 percent"],
+    "forbid": ["100 percent"],
+    "expect_docs": ["POL-DELAY"]
+  },
+  {
+    "id": "q18",
+    "question": "The train was 12 minutes late and the ticket cost 6.40 EUR. How much compensation do I get?",
+    "expected_intent": "delay_compensation",
+    "must_include": ["does not qualify", "0.00 EUR"],
+    "forbid": ["50 percent"],
+    "expect_docs": ["POL-DELAY"]
+  },
+  {
+    "id": "q19",
+    "question": "Hello, who are you?",
+    "expected_intent": "chitchat",
+    "must_include": ["customer service assistant"],
+    "forbid": ["90 minutes", "EUR"],
+    "expect_docs": []
+  },
+  {
+    "id": "q20",
+    "question": "What will the weather be in Budapest tomorrow?",
+    "expected_intent": "out_of_scope",
+    "must_include": ["outside Podoba Transit"],
+    "forbid": ["90 minutes", "EUR"],
+    "expect_docs": []
+  }
+]

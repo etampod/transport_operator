@@ -1,0 +1,10 @@
+[project]
+name = "podoba-transit-helpdesk"
+version = "1.0.0"
+description = "Agentic RAG customer-service chatbot for Podoba Transit passenger rules."
+requires-python = ">=3.10"
+readme = "README.md"
+
+[tool.pytest.ini_options]
+pythonpath = [".", "src"]
+testpaths = ["tests"]

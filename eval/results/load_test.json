@@ -1,0 +1,133 @@
+{
+  "queries": 150,
+  "warmup": 5,
+  "unique_questions": 20,
+  "host": {
+    "system": "Linux",
+    "release": "6.6.87.2-microsoft-standard-WSL2",
+    "python": "3.10.12",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "cold": {
+    "queries": 150,
+    "mean_ms": 11.209,
+    "median_ms": 10.316,
+    "p95_ms": 21.962,
+    "min_ms": 1.944,
+    "max_ms": 36.873,
+    "elapsed_s": 1.686,
+    "throughput_qps": 88.952
+  },
+  "cached": {
+    "queries": 150,
+    "mean_ms": 1.672,
+    "median_ms": 0.0,
+    "p95_ms": 15.407,
+    "min_ms": 0.0,
+    "max_ms": 33.826,
+    "elapsed_s": 0.253,
+    "throughput_qps": 593.274
+  },
+  "cache_hits_in_timed_pass": 135,
+  "cold_by_intent": {
+    "chitchat": {
+      "n": 7,
+      "mean_ms": 5.353,
+      "p95_ms": 10.343
+    },
+    "delay_compensation": {
+      "n": 14,
+      "mean_ms": 7.48,
+      "p95_ms": 11.202
+    },
+    "fare_calc": {
+      "n": 14,
+      "mean_ms": 7.282,
+      "p95_ms": 11.996
+    },
+    "multi_part": {
+      "n": 14,
+      "mean_ms": 18.615,
+      "p95_ms": 32.294
+    },
+    "out_of_scope": {
+      "n": 7,
+      "mean_ms": 5.716,
+      "p95_ms": 11.853
+    },
+    "policy_lookup": {
+      "n": 94,
+      "mean_ms": 12.091,
+      "p95_ms": 19.628
+    }
+  },
+  "cold_nodes": {
+    "run_rag": {
+      "total_ms": 590.573,
+      "calls": 115,
+      "mean_ms": 5.135
+    },
+    "retrieve": {
+      "total_ms": 43.846,
+      "calls": 115,
+      "mean_ms": 0.381
+    },
+    "grade_documents": {
+      "total_ms": 24.336,
+      "calls": 115,
+      "mean_ms": 0.212
+    },
+    "classify_intent": {
+      "total_ms": 13.258,
+      "calls": 150,
+      "mean_ms": 0.088
+    },
+    "draft_answer": {
+      "total_ms": 11.023,
+      "calls": 115,
+      "mean_ms": 0.096
+    },
+    "normalize_query": {
+      "total_ms": 6.31,
+      "calls": 150,
+      "mean_ms": 0.042
+    },
+    "prepare_query": {
+      "total_ms": 4.319,
+      "calls": 115,
+      "mean_ms": 0.038
+    },
+    "decompose": {
+      "total_ms": 3.507,
+      "calls": 136,
+      "mean_ms": 0.026
+    },
+    "run_tool": {
+      "total_ms": 3.295,
+      "calls": 35,
+      "mean_ms": 0.094
+    },
+    "finalize": {
+      "total_ms": 1.758,
+      "calls": 150,
+      "mean_ms": 0.012
+    },
+    "synthesize": {
+      "total_ms": 0.953,
+      "calls": 136,
+      "mean_ms": 0.007
+    },
+    "select_next_subtask": {
+      "total_ms": 0.875,
+      "calls": 286,
+      "mean_ms": 0.003
+    },
+    "direct_reply": {
+      "total_ms": 0.033,
+      "calls": 14,
+      "mean_ms": 0.002
+    }
+  },
+  "bottleneck_node": "run_rag"
+}

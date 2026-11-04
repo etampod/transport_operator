@@ -1,0 +1,47 @@
+# One image, two processes. Both listen on 0.0.0.0 inside the container and
+# Compose publishes the ports on every host interface, so another machine can
+# open http://<host-ip>:8501. Do not publish them as 127.0.0.1: that is
+# localhost-only.
+#
+# AGENT_API_URL is the Compose DNS name. Inside the UI container, localhost
+# is the UI process, not the API.
+
+services:
+  api:
+    image: podoba-transit-helpdesk:local
+    build: .
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "0.0.0.0:8000:8000"
+    healthcheck:
+      # python:3.11-slim has no curl. 127.0.0.1 here is the API process
+      # inside this container, which is the correct address for a healthcheck.
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 40s
+
+  ui:
+    image: podoba-transit-helpdesk:local
+    build: .
+    environment:
+      AGENT_API_URL: http://api:8000
+      STREAMLIT_SERVER_ADDRESS: 0.0.0.0
+      STREAMLIT_SERVER_PORT: "8501"
+      STREAMLIT_SERVER_HEADLESS: "true"
+      STREAMLIT_SERVER_FILE_WATCHER_TYPE: none
+      STREAMLIT_SERVER_ENABLE_CORS: "false"
+      STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION: "false"
+      STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
+    ports:
+      - "0.0.0.0:8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy
